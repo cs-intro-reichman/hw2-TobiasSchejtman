@@ -14,7 +14,7 @@ public class Cheers {
                         char currentChar = nameUpperCase.charAt(i);
 
                         if (letters.indexOf(currentChar) == -1) {
-                                System.out.println("Give me a " + currentChar + ": " + currentChar + "!");
+                                System.out.println("Give me a  " + currentChar + ": " + currentChar + "!");
                             } else {
                                 System.out.println("Give me an " + currentChar + ": " + currentChar + "!");
                             }
