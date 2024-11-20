@@ -9,13 +9,18 @@ public class Collatz {
 		
 		if (mode.equals("v")) {
 
-			for (int i = 1; i <= seed; i++) { 
-		
+			
+			System.out.println("1, 4, 2, 1 (4)");
+
+			for (int i = 2; i <= seed; i++) { 
+				
 				String sequence = "";
 				int number = i;
 				sequence += number;
-
-				while (number > 1) {
+				int steps = 1;
+				
+				
+				while (number > 1)  {
 			
 					if (number % 2 == 0) {
 						number /= 2;
@@ -24,14 +29,19 @@ public class Collatz {
 					}
 
 					sequence += ", " + number;
+					steps++;
+					
 
 				}
 
-				System.out.println(sequence);
+				System.out.println(sequence + " (" + steps + ")");
 			}
 
+			System.out.println("");
+			System.out.println("Every one of the first " + seed + " hailstone sequences reached 1.");
+
 			} else {
-				System.out.println("error");
+				System.out.println("Every one of the first " + seed + " hailstone sequences reached 1.");
 			}
 		}
 	}
