@@ -10,7 +10,7 @@ public class Collatz {
 		if (mode.equals("v")) {
 
 			
-			System.out.println("1, 4, 2, 1 (4)");
+			System.out.println("1 4 2 1 (4)");
 
 			for (int i = 2; i <= seed; i++) { 
 				
@@ -28,7 +28,7 @@ public class Collatz {
 						number = number * 3 + 1;
 					}
 
-					sequence += ", " + number;
+					sequence += " " + number;
 					steps++;
 					
 
